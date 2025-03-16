@@ -2,14 +2,15 @@ import React from "react";
 import { Mail, Linkedin, Github, FileText } from "lucide-react";
 import profilePhoto from "../../assets/profilePhoto.jpg";
 import Image from "next/image";
+import Banner2 from "../../assets/Banner2.jpeg";
 
 const Profile = () => {
   return (
     <section className="mx-auto ">
       <div className="w-full relative mb-24">
         {/* Banner Image */}
-        <img
-          src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?auto=format&fit=crop&q=80&w=2000&h=500"
+        <Image
+          src={Banner2}
           alt="Developer workspace"
           loading="lazy"
           className="w-full h-50 object-cover rounded-md shadow-md"

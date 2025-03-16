@@ -1,5 +1,7 @@
 import React from "react";
 import { Code2, Brain, Rocket, GraduationCap } from "lucide-react";
+import Image from "next/image";
+import about from "../../assets/about.jpeg";
 
 const About = () => {
   return (
@@ -12,8 +14,8 @@ const About = () => {
       <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-800">
         <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
           <div className="md:w-1/3">
-            <img
-              src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=500&auto=format&fit=crop"
+            <Image
+              src={about}
               alt="Programming Setup"
               className="rounded-lg shadow-lg"
             />
@@ -21,7 +23,7 @@ const About = () => {
 
           <div className="md:w-2/3 space-y-4 text-gray-300">
             <p className="text-lg leading-relaxed">
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
               <span className="text-emerald-400 font-semibold">
                 Tushar Shitole
               </span>
@@ -102,11 +104,11 @@ const About = () => {
 
         <div className="mt-12 p-6 rounded-xl bg-gradient-to-r from-emerald-500/10 to-blue-500/10 border border-gray-700">
           <p className="text-lg text-center text-gray-200 leading-relaxed">
-            "I enjoy combining my love for problem-solving with technology to
-            build user-centric applications that deliver exceptional
-            experiences. I'm always learning and expanding my knowledge, and my
-            goal is to continue developing innovative solutions while growing as
-            a developer."
+            &quot;I enjoy combining my love for problem-solving with technology
+            to build user-centric applications that deliver exceptional
+            experiences. I&apos;m always learning and expanding my knowledge,
+            and my goal is to continue developing innovative solutions while
+            growing as a developer.&quot;
           </p>
         </div>
       </div>

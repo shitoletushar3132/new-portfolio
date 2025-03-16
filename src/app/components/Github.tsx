@@ -15,15 +15,15 @@ const GitHubStats = () => {
     const username = "shitoletushar3132";
 
     // Fetch contributions data
-    let response1 = await fetch(
+    const response1 = await fetch(
       `https://github-contributions-api.jogruber.de/v4/${username}`
     );
-    let data1 = await response1.json();
+    const data1 = await response1.json();
     console.log(data1);
     // Assuming the response contains a list of contributions and you want to count them
     const totalContributions = Object.entries(data1?.total || {}).reduce(
-      // @ts-ignore
-      (total, [year, count]) => total + count,
+      // @ts-expect-error: Type inference issue with Object.entries and numeric values
+      (total, [/* ignored */, count]) => total + count,
       0
     );
 

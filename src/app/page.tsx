@@ -1,6 +1,5 @@
 "use client";
 import Content from "./components/Content";
-import HireMe from "./components/HireMe";
 import Navbar from "./components/Navbar";
 
 export default function Home() {

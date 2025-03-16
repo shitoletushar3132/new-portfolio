@@ -3,11 +3,9 @@ import {
   Github,
   Linkedin,
   MessageSquare,
-  Twitter,
   Send,
   User,
   Mail,
-  Disc as Discord,
 } from "lucide-react";
 
 interface FormData {
@@ -51,9 +49,9 @@ function ContactUs() {
             Get in Touch
           </h1>
           <p className="mb-8 text-gray-300 leading-relaxed">
-            I'm always open to exploring new collaborations and exciting
-            opportunities. Whether it's a project idea, a job opportunity, or
-            simply a chance to connect, feel free to reach out!
+            I&apos;m always open to exploring new collaborations and exciting
+            opportunities. Whether it&apos;s a project idea, a job opportunity,
+            or simply a chance to connect, feel free to reach out!
           </p>
 
           <div className="flex space-x-6 mb-8 justify-center">
