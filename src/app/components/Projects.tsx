@@ -185,7 +185,10 @@ const Projects = () => {
             </div>
 
             {/* Content */}
-            <div className="p-6">
+            <div
+              className="p-6 cursor-pointer"
+              onClick={(e) => handleDemoClick(e, project.demo)}
+            >
               <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
                 <Link className="w-5 h-5 text-emerald-400" />
                 {project.title}
