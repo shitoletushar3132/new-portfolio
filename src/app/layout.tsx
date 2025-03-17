@@ -30,6 +30,7 @@ export default function RootLayout({
       className={`${outfit.className} ${ovo.className} antialiased`}
     >
       <head>
+        <link rel="canonical" href="https://tusharshitole.site/" />
         <link rel="icon" href="/TS_Logo.jpg" type="image/jpg" />
       </head>
       <body>{children}</body>
