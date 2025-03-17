@@ -15,7 +15,7 @@ const ovo = OvoFont({
 export const metadata: Metadata = {
   title: "Tushar Shitole | Portfolio",
   description:
-    "Welcome to my portfolio. Showcasing my projects and skills in web development.",
+    "Welcome to my portfolio. Showcasing my projects and skills in web development. Mern Stack Developer",
   icons: {
     icon: "/TS_logo.jpg",
   },
