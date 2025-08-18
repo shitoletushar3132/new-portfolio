@@ -5,10 +5,6 @@ import Image from "next/image";
 import Banner2 from "../../assets/Banner2.jpeg";
 
 const Profile = () => {
-  const techStacks = {
-    "MERN Stack": ["React", "NextJS", "React Native", "NodeJS", "Express", "MongoDB", "PostgreSQL", "Redux", "Recoil", "GraphQL"],
-    "Java Stack": ["Java", "Spring Boot", "Spring MVC", "Hibernate", "JPA", "MySQL", "PostgreSQL", "Redis", "Microservices", "REST API"]
-  };
 
   return (
     <section className="mx-auto">
