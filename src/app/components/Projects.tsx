@@ -13,10 +13,31 @@ import saveNote from "../../assets/portfolio/notes.png";
 import youtube from "../../assets/portfolio/youtube.jpeg";
 import devTinder from "../../assets/portfolio/devTinder.png";
 import easysave from "../../assets/portfolio/easysave.png";
+import SkillLink from "../../assets/portfolio/SkillLink.png";
+import SpringLogo from "../../assets/portfolio/Spring-Logo.png";
 import { Github, Link, ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 const portfolios = [
+  {
+    id: 16,
+    src: SpringLogo,
+    title: "Spring Projects",
+    demo: "https://github.com/shitoletushar3132/learning-spring-core-mvc-boot",
+    code: "https://github.com/shitoletushar3132/learning-spring-core-mvc-boot",
+    description:
+      "Built multiple projects to gain hands-on experience and learn the full Spring ecosystem, including Spring Core, Spring MVC, Spring Boot, Spring Data JPA, and Spring Microservices.",
+  },
+  {
+    id: 15,
+    src: SkillLink,
+    title: "Skill Link",
+    demo: "https://servicediscovery-kr3f.onrender.com/",
+    code: "https://github.com/servicediscoveryy",
+    description:
+      "ServiceDiscovery is an innovative platform that connects " +
+      "service seekers with skilled individuals, empowering ordinary people to showcase their talents and offer services to a broader audience.",
+  },
   {
     id: 13,
     src: easysave,
@@ -144,10 +165,10 @@ const Projects = () => {
   };
 
   return (
-    <div className=" p-6">
+    <div className="p-6">
       <div className="mb-12">
-        <h1 className="font-bold text-5xl mb-4 ">My Projects</h1>
-        <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-blue-500  rounded-full mb-4"></div>
+        <h1 className="font-bold text-5xl mb-4">My Projects</h1>
+        <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full mb-4"></div>
         <p className="text-gray-400 text-lg">
           A showcase of my development journey
         </p>
@@ -166,17 +187,19 @@ const Projects = () => {
                 alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+
+              {/* Overlay Buttons */}
+              <div className="absolute inset-0 bg-black/50 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                 <button
                   onClick={(e) => handleDemoClick(e, project.demo)}
-                  className="p-2 bg-emerald-500 rounded-full hover:bg-emerald-600 transition-colors"
+                  className="p-2 bg-emerald-500 rounded-full hover:bg-emerald-600 transition-colors cursor-pointer"
                   title="Live Demo"
                 >
                   <ExternalLink className="w-5 h-5 text-white" />
                 </button>
                 <button
                   onClick={(e) => handleCodeClick(e, project.code)}
-                  className="p-2 bg-gray-700 rounded-full hover:bg-gray-600 transition-colors"
+                  className="p-2 bg-gray-700 rounded-full hover:bg-gray-600 transition-colors cursor-pointer"
                   title="View Code"
                 >
                   <Github className="w-5 h-5 text-white" />
@@ -185,10 +208,7 @@ const Projects = () => {
             </div>
 
             {/* Content */}
-            <div
-              className="p-6 cursor-pointer"
-              onClick={(e) => handleDemoClick(e, project.demo)}
-            >
+            <div className="p-6">
               <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
                 <Link className="w-5 h-5 text-emerald-400" />
                 {project.title}

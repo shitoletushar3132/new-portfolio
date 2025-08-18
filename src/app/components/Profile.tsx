@@ -5,8 +5,13 @@ import Image from "next/image";
 import Banner2 from "../../assets/Banner2.jpeg";
 
 const Profile = () => {
+  const techStacks = {
+    "MERN Stack": ["React", "NextJS", "React Native", "NodeJS", "Express", "MongoDB", "PostgreSQL", "Redux", "Recoil", "GraphQL"],
+    "Java Stack": ["Java", "Spring Boot", "Spring MVC", "Hibernate", "JPA", "MySQL", "PostgreSQL", "Redis", "Microservices", "REST API"]
+  };
+
   return (
-    <section className="mx-auto ">
+    <section className="mx-auto">
       <div className="w-full relative mb-24">
         {/* Banner Image */}
         <Image
@@ -26,19 +31,36 @@ const Profile = () => {
 
       <div className="space-y-6">
         {/* Profile Info */}
-        <div className="space-y-4 ">
+        <div className="space-y-4">
           <h1 className="text-3xl font-bold">
             Tushar Shitole
             <span className="inline-block ml-2 px-3 py-1 text-xs font-medium bg-purple-100 text-purple-700 rounded-full">
-              Available for work
+              Available for Work
             </span>
           </h1>
-          <p className="text-slate-500 max-w-2xl ">
-            MERN stack developer & content creator, building web solutions and
-            sharing knowledge. Passionate about creating intuitive user
-            experiences and scalable applications.
+          <p className="text-slate-500 max-w-2xl">
+            Full-Stack Developer | MERN & Java Stack. Building scalable web applications, APIs, and intuitive user interfaces. Passionate about creating efficient solutions using modern technologies.
           </p>
         </div>
+
+        {/* Tech Stack */}
+        {/* <div className="mt-4">
+          {Object.entries(techStacks).map(([stack, skills]) => (
+            <div key={stack} className="mb-4">
+              <h2 className="text-2xl font-semibold text-gray-200 mb-2">{stack}</h2>
+              <div className="flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-full text-sm font-medium shadow-sm"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div> */}
 
         {/* Social Links */}
         <div className="flex items-center gap-4 flex-wrap">
