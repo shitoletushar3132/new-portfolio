@@ -83,7 +83,7 @@ const Profile = () => {
             <Mail className="w-5 h-5" />
           </a>
           <a
-            href="https://shitoletushar3132.github.io/my-resume/resume.pdf"
+            href="https://shitoletushar3132.github.io/my-resume/Tushar_Shitole_8767699855.pdf"
             target="_blank"
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 text-white hover:from-purple-700 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
           >
